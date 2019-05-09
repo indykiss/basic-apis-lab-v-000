@@ -10,7 +10,7 @@ class RepositoriesController < ApplicationController
         req.params['client_secret'] = 02dbaf073d5a7a127693bdc3c833ca58833ff390
         req.params['v'] = '20160201'
         req.params['near'] = params[:zipcode]
-        req.params['query'] = 'coffee shop'
+        req.params['query'] = 'github'
     end
       body = JSON.parse(@resp.body)
       if @resp.success?
