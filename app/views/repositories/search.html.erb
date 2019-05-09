@@ -10,9 +10,9 @@
     <p><%= @error %></p>
   <% elsif @queries %>
     <ul>
-    <% @venues.each do |venue| %>
+    <% @queries.each do |query| %>
       <li>
-        <%= venue["name"] %><br>
+        <%= query["name"] %><br>
         <%= venue["location"]["address"] %><br>
         Checkins: <%= venue["stats"]["checkinsCount"] %>
       </li>
