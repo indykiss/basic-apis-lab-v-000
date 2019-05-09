@@ -14,7 +14,6 @@ class RepositoriesController < ApplicationController
        body_hash = JSON.parse(@resp.body)
        @results = body_hash["items"]
 
-
      rescue Faraday::ConnectionFailed
        @error = "There was a timeout. Please try again."
      end
