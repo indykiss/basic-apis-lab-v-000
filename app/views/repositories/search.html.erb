@@ -11,9 +11,8 @@
       <% @results.each do |res| %>
         <li>
           <%= res["name"] %>
-          <a href="<%= res["html_url"] %>"><%= res["html_url"] %>
+          <a href="<%= res["html_url"] %>"><%= res["html_url"] %></a>
           <%= res["description"] %>
-          </a>
         </li>
         <% end %>
       </ul>
