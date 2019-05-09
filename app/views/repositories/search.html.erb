@@ -13,7 +13,7 @@
     <% @queries.each do |query| %>
       <li>
         <%= query["name"] %><br>
-        <%= venue["location"]["address"] %><br>
+        <%= query["location"]["address"] %><br>
         Checkins: <%= venue["stats"]["checkinsCount"] %>
       </li>
     <% end %>
