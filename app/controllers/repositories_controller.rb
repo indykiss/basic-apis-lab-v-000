@@ -22,7 +22,6 @@ class RepositoriesController < ApplicationController
         @error = "There was a timeout. Please try again."
       end
       render 'search'
-
   end
 
 
