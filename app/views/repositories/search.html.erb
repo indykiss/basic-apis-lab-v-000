@@ -8,11 +8,11 @@
 <div>
   <% if @results %>
     <ul>
-      <% @results.each do |res| %>
+      <% @results.each do |result| %>
         <li>
-          <%= res["name"] %>
-          <a href="<%= res["html_url"] %>"><%= res["html_url"] %></a>
-          <%= res["description"] %>
+          <%= result["name"] %>
+          <a href="<%= result["html_url"] %>"><%= result["html_url"] %></a>
+          <%= result["description"] %>
         </li>
         <% end %>
       </ul>
