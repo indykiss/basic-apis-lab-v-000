@@ -10,7 +10,7 @@ class RepositoriesController < ApplicationController
         req.params['client_secret'] = '02dbaf073d5a7a127693bdc3c833ca58833ff390'
         req.params['q'] = 'search'
         req.params['sort'] = 'github'
-        req.params['order'] = 'github'
+        req.params['order'] = 'desc'
     end
       body = JSON.parse(@resp.body)
       if @resp.success?
